@@ -14,13 +14,13 @@
 
 <form action="{{ url_for('predict') }}" method="post">
 
-<input type="text" name="Nitrogen" placeholder="Nitrogen" required>
-<input type="text" name="Phosphorus" placeholder="Phosphorus" required>
-<input type="text" name="Potassium" placeholder="Potassium" required>
-<input type="text" name="temperature" placeholder="Temperature" required>
-<input type="text" name="Humidity" placeholder="Humidity" required>
-<input type="text" name="PH" placeholder="PH" required>
-<input type="text" name="rainfall" placeholder="Rainfall" required>
+<input type="number" name="Nitrogen" placeholder="Nitrogen (0 - 140)" required>
+<input type="number" name="Phosphorus" placeholder="Phosphorus (5 - 145)" required>
+<input type="number" name="Potassium" placeholder="Potassium (5 - 205)" required>
+<input type="number" name="temperature" placeholder="Temperature °C (8 - 43)" required>
+<input type="number" name="Humidity" placeholder="Humidity % (14 - 100)" required>
+<input type="number" name="PH" placeholder="pH (3.5 - 10)" required>
+<input type="number" name="rainfall" placeholder="Rainfall mm (20 - 300)" required>
 
 <button type="submit" class="btn">Predict</button>
 
